@@ -59,4 +59,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:id="@+id/usernameTextField" />
+
+    <Button
+        android:text="Generate Random Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/randUsername"
+        android:layout_alignTop="@+id/usernameTextField"
+        android:layout_alignLeft="@+id/usernameTextField"
+        android:layout_alignStart="@+id/usernameTextField" />
 </RelativeLayout>

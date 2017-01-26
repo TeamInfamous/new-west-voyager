@@ -53,4 +53,14 @@
         android:id="@+id/button"
         android:onClick="onClickStartMenu" />
 
+    <Button
+        android:text="Play!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/continueButton"
+        android:layout_toRightOf="@+id/startMenu_placeholder"
+        android:layout_toEndOf="@+id/startMenu_placeholder"
+        android:id="@+id/button2"
+        android:onClick="onClickPlay" />
+
 </RelativeLayout>

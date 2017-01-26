@@ -14,9 +14,6 @@ public class SelectLevel extends AppCompatActivity {
         setContentView(R.layout.activity_select_level);
     }
 
-    /*
-    Function to navigate to 'Main Menu' from 'Select Level' page.
-     */
     public void onClickMainMenu(final View view) {
         final Intent intent;
         intent = new Intent(getApplicationContext(), MainMenu.class);

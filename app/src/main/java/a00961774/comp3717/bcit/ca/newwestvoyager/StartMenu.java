@@ -15,9 +15,6 @@ public class StartMenu extends AppCompatActivity {
         setContentView(R.layout.activity_start_menu);
     }
 
-    /*
-    Function for 'continue' button to navigate to 'How to Play' page.
-     */
     public void onClick_startMenuToHowToPlay(View view) {
         final Intent intent;
         EditText usernameEntry;

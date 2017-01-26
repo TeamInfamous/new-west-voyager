@@ -14,9 +14,6 @@ public class Leaderboards extends AppCompatActivity {
         setContentView(R.layout.activity_leaderboards);
     }
 
-    /*
-    Function to navigate to 'Main Menu' from 'Leaderboards' page.
-     */
     public void onClickMainMenu(final View view) {
         final Intent intent;
         intent = new Intent(getApplicationContext(), MainMenu.class);

@@ -25,24 +25,12 @@ public class HowToPlay extends AppCompatActivity {
         Toast.makeText(this, username, Toast.LENGTH_LONG).show();
     }
 
-    /*
-    Function to go back to 'Start Menu' page.
-     */
-    public void onClickStartMenu(final View view) {
-        this.finish();
-    }
-
-    /*
-    Function to navigate to 'Leaderboards' page from 'How to Play' page.
-     */
     public void onClickContinueToLeaderboards(final View view) {
         final Intent intent;
         intent = new Intent(getApplicationContext(), Leaderboards.class);
         startActivity(intent);
     }
-    /*
-    Function to navigate to 'Main Menu' from 'How to Play' page.
-     */
+
     public void onClickMainMenu(final View view) {
         final Intent intent;
         intent = new Intent(getApplicationContext(), MainMenu.class);

@@ -37,15 +37,15 @@ public class HowToPlay extends AppCompatActivity {
      */
     public void onClickContinueToLeaderboards(final View view) {
         final Intent intent;
-
         intent = new Intent(getApplicationContext(), Leaderboards.class);
         startActivity(intent);
     }
-
-    public void onClickPlay (final View view) {
+    /*
+    Function to navigate to 'Main Menu' from 'How to Play' page.
+     */
+    public void onClickMainMenu(final View view) {
         final Intent intent;
-
-        intent = new Intent (getApplicationContext (), Game.class);
-        startActivity (intent);
+        intent = new Intent(getApplicationContext(), MainMenu.class);
+        startActivity(intent);
     }
 }

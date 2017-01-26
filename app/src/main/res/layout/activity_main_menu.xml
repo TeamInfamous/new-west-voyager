@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="a00961774.comp3717.bcit.ca.newwestvoyager.MainMenu">
+
+    <TextView
+        android:text="Main Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="32sp"
+        android:id="@+id/mainMenuTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Demo Level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/demoLevelBtn_mainMenu"
+        android:minHeight="60dp"
+        android:minWidth="220dp"
+        android:onClick="onClick_mainMenuToDemoLevel"
+        android:layout_below="@+id/selectLevelBtn_mainMenu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Start Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startMenuBtn_mainMenu"
+        android:minHeight="60dp"
+        android:minWidth="220dp"
+        android:layout_marginTop="46dp"
+        android:onClick="onClick_mainMenuToStartMenu"
+        android:layout_below="@+id/mainMenuTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="How to Play!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/howToPlayBtn_mainMenu"
+        android:minHeight="60dp"
+        android:minWidth="220dp"
+        android:onClick="onClick_mainMenuToHowToPlay"
+        android:layout_below="@+id/startMenuBtn_mainMenu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Select Level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectLevelBtn_mainMenu"
+        android:minHeight="60dp"
+        android:minWidth="220dp"
+        android:onClick="onClick_mainMenuToSelectLevel"
+        android:layout_marginTop="63dp"
+        android:layout_alignTop="@+id/leaderboardsBtn_mainMenu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Leaderboards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leaderboardsBtn_mainMenu"
+        android:minHeight="60dp"
+        android:minWidth="220dp"
+        android:onClick="onClick_mainMenuToLeaderboards"
+        android:layout_below="@+id/howToPlayBtn_mainMenu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -18,7 +18,7 @@ public class StartMenu extends AppCompatActivity {
     /*
     Function for 'continue' button to navigate to 'How to Play' page.
      */
-    public void onClickContinueToHowToPage(View view) {
+    public void onClick_startMenuToHowToPlay(View view) {
         final Intent intent;
         EditText usernameEntry;
         String welcomeUsernameToastMsg;

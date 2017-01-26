@@ -25,47 +25,40 @@
         android:text="Continue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="132dp"
         android:id="@+id/continueButton"
+        android:background="#5cb85c"
+        android:onClick="onClick_startMenuToHowToPlay"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="#1ec322"
-        android:onClick="onClickContinueToHowToPage" />
-
-    <TextView
-        android:text="Start Menu [placeholder]"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/startMenu_placeholder"
-        android:layout_below="@+id/applicationTitle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp" />
-
-    <TextView
-        android:text="Enter username:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:id="@+id/enterUsernameTextView"
-        android:layout_below="@+id/startMenu_placeholder"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginBottom="78dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_below="@+id/enterUsernameTextView"
+        android:id="@+id/usernameTextField"
+        android:layout_above="@+id/randUsernameButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/usernameTextField" />
+        android:layout_marginBottom="27dp" />
 
     <Button
         android:text="Generate Random Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/randUsername"
-        android:layout_alignTop="@+id/usernameTextField"
-        android:layout_alignLeft="@+id/usernameTextField"
-        android:layout_alignStart="@+id/usernameTextField" />
+        android:id="@+id/randUsernameButton"
+
+        android:layout_marginBottom="59dp"
+        android:layout_above="@+id/continueButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Enter username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterUsernameTextView"
+        android:layout_above="@+id/usernameTextField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp" />
+
 </RelativeLayout>

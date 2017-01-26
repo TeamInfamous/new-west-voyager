@@ -5,27 +5,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Leaderboards extends AppCompatActivity {
+public class SelectLevel extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_leaderboards);
+        setContentView(R.layout.activity_select_level);
     }
 
     /*
-    Function to navigate to 'Main Menu' from 'Leaderboards' page.
+    Function to navigate to 'Main Menu' from 'Select Level' page.
      */
     public void onClickMainMenu(final View view) {
         final Intent intent;
         intent = new Intent(getApplicationContext(), MainMenu.class);
-        startActivity(intent);
-    }
-
-    public void onClickContinueToSelectLevel(final View view) {
-        final Intent intent;
-        intent = new Intent(getApplicationContext(), SelectLevel.class);
         startActivity(intent);
     }
 }

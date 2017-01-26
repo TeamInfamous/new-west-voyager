@@ -15,52 +15,54 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
-        android:id="@+id/applicationTitle"
+        android:id="@+id/howToPlayTitle"
         android:textSize="32sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="About game and background information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutGame_howToPlay_placeholder"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/howToPlayTitle"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Instructions on how to play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/instructions_howToPlay_placeholder"
+        android:layout_below="@+id/aboutGame_howToPlay_placeholder"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Main Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#428bca"
+        android:id="@+id/startMenuButton_howToPlay"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_alignTop="@+id/continueButton_howToPlay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickMainMenu" />
 
     <Button
         android:text="Continue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:id="@+id/continueButton"
-        android:background="#1ec322"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/continueButton_howToPlay"
+        android:background="#5cb85c"
         android:onClick="onClickContinueToLeaderboards"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="How to Play [placeholder]"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/startMenu_placeholder"
-        android:layout_below="@+id/applicationTitle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="113dp" />
-
-    <Button
-        android:text="Start Menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/continueButton"
-        android:background="#6223f4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:id="@+id/button"
-        android:onClick="onClickStartMenu" />
-
-    <Button
-        android:text="Play!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/continueButton"
-        android:layout_toRightOf="@+id/startMenu_placeholder"
-        android:layout_toEndOf="@+id/startMenu_placeholder"
-        android:id="@+id/button2"
-        android:onClick="onClickPlay" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

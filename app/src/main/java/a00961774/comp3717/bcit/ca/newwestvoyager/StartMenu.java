@@ -11,7 +11,7 @@ public class StartMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+        getSupportActionBar().hide(); // hide application title
         setContentView(R.layout.activity_start_menu);
     }
 

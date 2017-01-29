@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 import android.content.res.AssetManager;
 import android.util.Log;
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ public class StartMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        dictionary ();
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide(); // hide application title
         setContentView(R.layout.activity_start_menu);
@@ -51,15 +53,18 @@ public class StartMenu extends AppCompatActivity {
     }
 
     public void onClick_startMenuToHowToPlay (View view) {
-        final Intent intent;
-        EditText usernameEntry;
-        String welcomeUsernameToastMsg;
 
-        usernameEntry = (EditText)findViewById(R.id.usernameTextField);
-        intent = new Intent(getApplicationContext(), HowToPlay.class);
+        EditText usernameEntry = (EditText) findViewById(R.id.usernameTextField);
 
-        welcomeUsernameToastMsg = "Welcome " + usernameEntry.getText().toString() + "!";
-        intent.putExtra("username", welcomeUsernameToastMsg);
-        startActivity(intent);
+        if (usernameEntry.getText ().toString () == null || usernameEntry.getText ().toString ().isEmpty() ||
+                usernameEntry.getText ().toString ().length () == 0)
+            (Toast.makeText (this, "Username field empty!", Toast.LENGTH_SHORT)).show ();
+        else {
+            final Intent intent            = new Intent(getApplicationContext(), HowToPlay.class);
+
+            String welcomeUsernameToastMsg = "Welcome " + usernameEntry.getText().toString() + "!";
+            intent.putExtra("username", welcomeUsernameToastMsg);
+            startActivity (intent);
+        }
     }
 }

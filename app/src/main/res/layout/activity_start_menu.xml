@@ -50,7 +50,8 @@
 
         android:layout_marginBottom="59dp"
         android:layout_above="@+id/continueButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="randomiseUsername"/>
 
     <TextView
         android:text="Enter username"

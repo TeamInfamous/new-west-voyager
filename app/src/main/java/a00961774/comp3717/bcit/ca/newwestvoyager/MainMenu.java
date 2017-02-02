@@ -37,4 +37,10 @@ public class MainMenu extends AppCompatActivity {
         intent = new Intent(getApplicationContext(), SelectLevel.class);
         startActivity(intent);
     }
+
+    public void onClick_mainMenuToDemoLevel(final View view) {
+        final Intent intent;
+        intent = new Intent(getApplicationContext(), DemoLevel.class);
+        startActivity(intent);
+    }
 }

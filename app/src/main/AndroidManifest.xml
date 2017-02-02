@@ -18,7 +18,8 @@
         <activity android:name=".HowToPlay" />
         <activity android:name=".Leaderboards" />
         <activity android:name=".MainMenu" />
-        <activity android:name=".SelectLevel"></activity>
+        <activity android:name=".SelectLevel" />
+        <activity android:name=".DemoLevel"></activity>
     </application>
 
 </manifest>

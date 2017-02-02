@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
-        android:id="@+id/applicationTitle"
+        android:id="@+id/leaderboardsTitle"
         android:textSize="32sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/aboutGame_howToPlay_placeholder"
         android:layout_marginTop="60dp"
-        android:layout_below="@+id/applicationTitle"
+        android:layout_below="@+id/leaderboardsTitle"
         android:layout_centerHorizontal="true" />
 
     <Button

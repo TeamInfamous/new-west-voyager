@@ -65,4 +65,15 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <Button
+        android:text="Try demo level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructions_howToPlay_placeholder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#ec8200"
+        android:id="@+id/demoLevelButton"
+        android:onClick="onClickDemoLevel" />
+
 </RelativeLayout>

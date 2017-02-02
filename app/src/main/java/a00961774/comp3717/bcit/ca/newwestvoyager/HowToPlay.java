@@ -36,4 +36,10 @@ public class HowToPlay extends AppCompatActivity {
         intent = new Intent(getApplicationContext(), MainMenu.class);
         startActivity(intent);
     }
+
+    public void onClickDemoLevel(final View view) {
+        final Intent intent;
+        intent = new Intent(getApplicationContext(), DemoLevel.class);
+        startActivity(intent);
+    }
 }

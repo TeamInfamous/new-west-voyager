@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.content.res.AssetManager;
 import android.util.Log;
+
+import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Arrays;
+import java.io.BufferedReader;
 import java.util.Random;
 
 public class StartMenu extends AppCompatActivity {
@@ -18,10 +20,10 @@ public class StartMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        /*
+
         if (file.size () == 0)
             dictionary ();
-        */
+
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide(); // hide application title
         setContentView(R.layout.activity_start_menu);
@@ -29,10 +31,10 @@ public class StartMenu extends AppCompatActivity {
 
     private void dictionary () {
         try {
-            AssetManager am = getAssets();
-            Scanner scan = new Scanner(am.open(String.format("randomWords.txt")));
-            while (scan.hasNextLine())
-                file.add(scan.nextLine());
+            BufferedReader reader = new BufferedReader (new InputStreamReader(getAssets ().open ("randomWords.txt")));
+            String line;
+            while ((line = reader.readLine()) != null)
+                file = new ArrayList <String> (Arrays.asList ((line.toLowerCase ()).split (" ")));
         } catch (Exception e) {
             Log.d ("Broken :p", "Send Help. :p");
         }

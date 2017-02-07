@@ -23,6 +23,7 @@ public class MainMenu extends AppCompatActivity {
     public void onClick_mainMenuToHowToPlay(final View view) {
         final Intent intent;
         intent = new Intent(getApplicationContext(), HowToPlay.class);
+        intent.putExtra("from main menu", "main menu");
         startActivity(intent);
     }
 

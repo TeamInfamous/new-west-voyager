@@ -1,12 +1,10 @@
 package a00961774.comp3717.bcit.ca.newwestvoyager;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
-
-import static android.widget.Toast.makeText;
 
 public class HowToPlay extends AppCompatActivity {
 
@@ -14,6 +12,7 @@ public class HowToPlay extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         final Intent intent;
         final String username;
+        final String mainMenu;
 
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
@@ -22,7 +21,11 @@ public class HowToPlay extends AppCompatActivity {
         // Created welcome toast message displaying username entry
         intent = getIntent();
         username = intent.getStringExtra("username");
-        Toast.makeText(this, username, Toast.LENGTH_LONG).show();
+        mainMenu = intent.getStringExtra("from main menu");
+        // Display toast message if not coming from the main menu
+        if (!"main menu".equalsIgnoreCase(mainMenu)) {
+            Toast.makeText(this, username, Toast.LENGTH_LONG).show();
+        }
     }
 
     public void onClickContinueToLeaderboards(final View view) {

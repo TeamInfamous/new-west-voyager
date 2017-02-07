@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_select_level"
+    android:id="@+id/activity_select_level2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="a00961774.comp3717.bcit.ca.newwestvoyager.SelectLevel">
+    tools:context="a00961774.comp3717.bcit.ca.newwestvoyager.SelectLevel2">
 
     <Button
         android:text="Main Menu"
@@ -35,7 +35,7 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="Background image of 1st level"
+        android:text="Background image of 2nd level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="77dp"
@@ -44,7 +44,7 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="Name of 1st Level"
+        android:text="Name of 2nd Level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/firstLevelTitle"
@@ -72,16 +72,26 @@
         android:onClick="onClickDifficultyPage" />
 
     <Button
-        android:text="Level 2"
+        android:text="Level 3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/toLevel2"
-        android:onClick="onClickSelectLevel2"
+        android:id="@+id/toLevel3"
+        android:onClick="onClickSelectLevel3"
         android:layout_alignBaseline="@+id/mainMenuButton_selectLevel"
         android:layout_alignBottom="@+id/mainMenuButton_selectLevel"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="17dp"
-        android:layout_marginEnd="17dp" />
+        android:layout_toRightOf="@+id/toLevel1"
+        android:layout_toEndOf="@+id/toLevel1" />
 
+    <Button
+        android:text="Level 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toLevel1"
+        android:onClick="onClickSelectLevel1"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBaseline="@+id/toLevel3"
+        android:layout_alignBottom="@+id/toLevel3"
+        android:layout_alignRight="@+id/selectLevelTitle"
+        android:layout_alignEnd="@+id/selectLevelTitle" />
 </RelativeLayout>

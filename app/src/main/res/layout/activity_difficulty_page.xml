@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_difficulty_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="a00961774.comp3717.bcit.ca.newwestvoyager.DifficultyPage">
+
+    <Button
+        android:text="Main Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#428bca"
+        android:id="@+id/mainMenuButton"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickMainMenu" />
+
+    <TextView
+        android:text="Select Difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:textSize="32sp"
+        android:id="@+id/selectDifficultyTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/easyButton"
+        android:layout_marginTop="91dp"
+        android:layout_below="@+id/selectDifficultyTitle"
+        android:layout_alignLeft="@+id/selectDifficultyTitle"
+        android:layout_alignStart="@+id/selectDifficultyTitle"
+        android:onClick="onClickGamePage" />
+
+    <Button
+        android:text="Hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/impossibleButton"
+        android:layout_alignBottom="@+id/impossibleButton"
+        android:layout_alignLeft="@+id/easyButton"
+        android:layout_alignStart="@+id/easyButton"
+        android:id="@+id/hardButton"
+        android:onClick="onClickGamePage" />
+
+    <Button
+        android:text="Impossible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/impossibleButton"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/mediumButton"
+        android:layout_alignRight="@+id/selectDifficultyTitle"
+        android:layout_alignEnd="@+id/selectDifficultyTitle"
+        android:onClick="onClickGamePage" />
+
+    <Button
+        android:text="Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediumButton"
+        android:layout_alignBaseline="@+id/easyButton"
+        android:layout_alignBottom="@+id/easyButton"
+        android:layout_alignLeft="@+id/impossibleButton"
+        android:layout_alignStart="@+id/impossibleButton"
+        android:onClick="onClickGamePage" />
+</RelativeLayout>

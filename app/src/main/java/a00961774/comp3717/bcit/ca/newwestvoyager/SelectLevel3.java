@@ -4,18 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
-public class SelectLevel extends AppCompatActivity {
+public class SelectLevel3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_select_level);
-
-        // TextView textInfo = (TextView)findViewById(R.id.levelOneInfo);
-        // textInfo.setText("Name of level 1\nHigh Scores\nUser\nScore");
+        setContentView(R.layout.activity_select_level3);
     }
 
     public void onClickMainMenu(final View view) {

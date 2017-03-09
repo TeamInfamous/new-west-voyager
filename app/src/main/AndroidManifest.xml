@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="a00961774.comp3717.bcit.ca.newwestvoyager">
 
-    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
-
     <permission
         android:name="packagename.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
@@ -47,6 +45,12 @@
         <activity android:name=".SelectLevel3" />
         <activity android:name=".DifficultyPage" />
         <activity android:name=".Game"></activity>
+        <provider
+            android:name=".WordsContentProvider"
+            android:authorities="a00961774.comp3717.bcit.ca.newwestvoyager.database.schema"
+            android:enabled="true"
+            android:exported="false">
+        </provider>
     </application>
 
 </manifest>

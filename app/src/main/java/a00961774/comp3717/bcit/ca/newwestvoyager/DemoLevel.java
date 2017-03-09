@@ -40,6 +40,10 @@ public class DemoLevel extends AppCompatActivity implements OnMapReadyCallback {
                 .title   ("Sydney")
                 .snippet ("The most populous city in Australia.")
                 .position (sydney));
+
+        map.addMarker (new MarkerOptions ()
+           .position (new LatLng (10, 10))
+           .title    ("Hello World"));
     }
 
     public void onClickMainMenu(final View view) {

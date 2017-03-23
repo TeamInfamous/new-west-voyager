@@ -27,7 +27,8 @@ public class DemoLevel extends AppCompatActivity implements OnMapReadyCallback {
 
     @Override
     public void onMapReady (GoogleMap map) {
-        LatLng sydney = new LatLng (-33.867, 151.206);
+        // LatLng sydney = new LatLng (-33.867, 151.206);
+        LatLng sydney = new LatLng (49, -122);
 
         if (!checkLocationPermission ()) {
            System.exit (1);

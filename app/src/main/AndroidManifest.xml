@@ -44,13 +44,15 @@
         <activity android:name=".SelectLevel2" />
         <activity android:name=".SelectLevel3" />
         <activity android:name=".DifficultyPage" />
-        <activity android:name=".Game"></activity>
+        <activity android:name=".Game" />
+
         <provider
             android:name=".WordsContentProvider"
             android:authorities="a00961774.comp3717.bcit.ca.newwestvoyager.database.schema"
             android:enabled="true"
-            android:exported="false">
-        </provider>
+            android:exported="false"></provider>
+
+        <activity android:name=".JoystickActivity"></activity>
     </application>
 
 </manifest>

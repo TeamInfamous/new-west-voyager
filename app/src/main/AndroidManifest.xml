@@ -50,9 +50,10 @@
             android:name=".WordsContentProvider"
             android:authorities="a00961774.comp3717.bcit.ca.newwestvoyager.database.schema"
             android:enabled="true"
-            android:exported="false"></provider>
+            android:exported="false" />
 
-        <activity android:name=".JoystickActivity"></activity>
+        <activity android:name=".JoystickActivity" />
+        <activity android:name=".SpriteSheetAnimation"></activity>
     </application>
 
 </manifest>

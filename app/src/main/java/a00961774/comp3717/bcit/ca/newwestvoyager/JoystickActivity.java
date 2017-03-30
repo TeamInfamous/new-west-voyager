@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.content.Intent;
 import android.app.Activity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -85,5 +86,9 @@ public class JoystickActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    public void spriteViewOpen (final View view) {
+        startActivity (new Intent (this, SpriteSheetAnimation.class));
     }
 }

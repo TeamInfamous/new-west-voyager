@@ -44,4 +44,8 @@ public class MainMenu extends AppCompatActivity {
         intent = new Intent(getApplicationContext(), DemoLevel.class);
         startActivity(intent);
     }
+
+    public void onClick_mainMenuToJoyStick (final View view) {
+        startActivity (new Intent (getApplicationContext (), JoystickActivity.class));
+    }
 }

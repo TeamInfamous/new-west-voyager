@@ -27,7 +27,7 @@ public class JoystickActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_joystick);
-        /*
+
         textView1 = (TextView)findViewById(R.id.textView1);
         textView2 = (TextView)findViewById(R.id.textView2);
         textView3 = (TextView)findViewById(R.id.textView3);
@@ -84,6 +84,6 @@ public class JoystickActivity extends AppCompatActivity {
                 }
                 return true;
             }
-        }); */
+        });
     }
 }
